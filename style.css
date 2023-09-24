@@ -62,7 +62,8 @@ body {
     position: relative;
     top: 0;
     right: 10;
-    padding-bottom: 10px; /* Move the element to the top-right corner of its containing element */
+    padding-bottom: 10px;
+    /* Move the element to the top-right corner of its containing element */
 }
 
 
@@ -82,11 +83,13 @@ body {
     font-weight: 200;
     border: 1px solid white;
 }
- .others .weather-item {
+
+.others .weather-item {
     display: flex;
     justify-content: space-between;
 }
-.future-forecast{
+
+.future-forecast {
     background: rgba(24, 24, 27, 0.6);
     padding: 25px;
     position: fixed;
@@ -98,30 +101,31 @@ body {
     justify-content: center;
 }
 
-.future-forecast .today{
+.future-forecast .today {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.future-forecast .today .Day{
+.future-forecast .today .Day {
     padding: 5px 15px;
     background: #3c3c44;
     border-radius: 50px;
     text-align: center;
 }
 
-.future-forecast .today .temp{
+.future-forecast .today .temp {
     font-size: 18px;
     padding-top: 15px;
 }
 
 
-.future-forecast .weather-forecast{
+.future-forecast .weather-forecast {
     display: flex;
 }
+
 /* Add a new class for the container that wraps future-forecast and weather-forecast */
-.weather-forecast  .weather-forecast-item{
+.weather-forecast .weather-forecast-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -131,14 +135,15 @@ body {
     border-radius: 10px;
     padding: 15px;
 }
-.weather-forecast .weather-forecast-item .Day{
+
+.weather-forecast .weather-forecast-item .Day {
     padding: 5px 15px;
     background: #3c3c44;
     border-radius: 50px;
     text-align: center;
 }
 
-.weather-forecast .weather-forecast-item .temp{
+.weather-forecast .weather-forecast-item .temp {
     font-weight: 100;
 }
 
@@ -149,27 +154,78 @@ body {
         overflow: scroll;
     }
 
+    .container {
+        padding: 20px 20px;
+        color: white;
+    }
+
+
+    .date-container {
+        font-weight: 50;
+    }
+
+    .date-container .time {
+        font-size: 40px;
+        padding-top: 15px;
+
+    }
+
+    .date-container #am-pm {
+        font-size: 15px;
+        margin-left: 2px;
+    }
+
+    .date-container .date {
+        font-size: 22px;
+        padding-top: 10px;
+    }
+
+    .others {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-top: 7px;
+        background: rgba(24, 24, 27, 0.6);
+        padding: 20px;
+        border-radius: 10px;
+        margin: 0px 0;
+        width: 200px;
+        height: auto;
+        gap: 3px;
+        padding-top: 20px;
+        font-weight: 200;
+        border: 1px solid white;
+    }
     
-.place-container {
-    text-align: center;
-}
+    .others .weather-item {
+        display: flex;
+        justify-content: space-between;
+    }
 
-.zone {
-    font-size: 30px;
-    margin-bottom: 10px;
-    font-weight: 100;
-    padding-top: 20px;
-    margin-left: 30px;
-}
 
-.country {
-    font-size: 20px;
-    text-align: end;
-    font-weight: 700;
-    position: relative;
-    top: 0;
-    right: 10;
-    padding-bottom: 10px; /* Move the element to the top-right corner of its containing element */
-}
+
+    .place-container {
+        text-align: center;
+    }
+    
+    .zone {
+        font-size: 25px;
+        margin-bottom: 10px;
+        font-weight: 100;
+        padding-top: 20px;
+    }
+    
+    .country {
+        font-size: 15px;
+        text-align: end;
+        font-weight: 700;
+        position: relative;
+        top: 0;
+        right: 10;
+        font: lighter;
+        padding-bottom: 10px;
+        /* Move the element to the top-right corner of its containing element */
+    }
+    
 
 }
